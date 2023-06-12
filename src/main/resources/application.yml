@@ -18,7 +18,10 @@ spring:
         web-application-type: none
 
 # connect to db container via terminal: docker exec -it postgres bash (allows for execution of shell commands in postgres container)
-# connect to db container: /# psql -U amigoscode
-# list databases: /l
+# connect to db container: \# psql -U amigoscode
+# list databases: \l
 # create customer database: CREATE DATABASE customer; (\l displays customer in database list)
 # cntrl d exists database list and container
+# connect to customer database: \c customer (can type sql commands once connected to specific database)
+# show relations once connected to database: \d
+# show table format (column names/types): \d customer
